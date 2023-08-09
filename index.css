@@ -1,0 +1,56 @@
+.layout{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows:10vh 80vh 10vh ;
+    grid-template-areas: 
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+   
+}
+.header{
+    grid-area: h;
+    transition: 1s ease;
+}
+.sb1{
+    grid-area: sb1;
+    transition: 2s ease;
+}
+.main{
+    grid-area: m;
+    transition: 2s ease;
+}
+.sb2{
+    grid-area: sb2;
+    transition: 2s ease;
+}
+.footer{
+    grid-area: f;
+    transition: 1s ease;
+}
+.layout div{
+    background-color: chartreuse;
+    border: 2px solid;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300px;
+    
+}
+.header:hover{
+    background-color: crimson;
+}
+.sb1:hover{
+    background-color: crimson;
+
+}
+.main:hover{
+    background-color: crimson;
+}
+.sb2:hover{
+    background-color: crimson;
+}
+.footer:hover{
+    background-color: crimson;
+}
